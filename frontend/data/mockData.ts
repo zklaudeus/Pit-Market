@@ -1,34 +1,5 @@
-export type Product = {
-  id: string;
-  name: string;
-  category: string;
-  description: string;
-  image?: string;
-  basePrice?: number;
-  ingredients: {
-    proteins?: IngredientOption[];
-    bases?: IngredientOption[];
-    sides?: IngredientOption[];
-    veggies?: IngredientOption[];
-    touches?: IngredientOption[];
-    sauces?: IngredientOption[];
-    extras?: IngredientOption[];
-  };
-  rules: {
-    proteinCount?: number;
-    baseCount?: number;
-    sideCount?: number;
-    veggieCount?: number;
-    touchCount?: number;
-    sauceCount?: number;
-  };
-};
+import { Product, IngredientOption } from '../types';
 
-export type IngredientOption = {
-  id: string;
-  name: string;
-  price?: number;
-};
 
 const sauces: IngredientOption[] = [
   { id: 's1', name: 'Ajo' },
