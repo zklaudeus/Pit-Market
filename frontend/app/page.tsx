@@ -27,7 +27,7 @@ export default async function StaticMenu() {
             className="w-full h-auto object-contain mb-1 transition-transform hover:scale-105 rounded-[24px]" 
             priority
           />
-          <p className="text-[10px] uppercase tracking-widest text-brand-gray font-semibold mt-0.5">Menú del día</p>
+          <p className="text-[10px] uppercase tracking-widest text-brand-black/60 font-semibold mt-0.5">Menú del día</p>
         </div>
       </header>
 
@@ -53,7 +53,7 @@ export default async function StaticMenu() {
         {/* QR CODE SECTION */}
         <QRCodeSection />
         <div className="text-center py-6 pb-4">
-           <div className="w-8 h-8 mx-auto border border-gray-200 rounded-full flex items-center justify-center text-brand-gray/50 mb-3">
+           <div className="w-8 h-8 mx-auto border border-gray-200 rounded-full flex items-center justify-center text-brand-black/40 mb-3">
              <span className="font-outfit text-[10px] font-bold">PM</span>
            </div>
         </div>

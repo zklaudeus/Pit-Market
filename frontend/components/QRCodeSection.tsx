@@ -10,7 +10,7 @@ export default function QRCodeSection() {
       <h3 className="font-outfit font-bold text-2xl text-brand-black mb-2">
         Escanea para ver el menú
       </h3>
-      <p className="text-brand-gray text-sm mb-6 font-light max-w-[250px]">
+      <p className="text-brand-black/70 text-sm mb-6 font-light max-w-[250px]">
         Accede a nuestro menú digital desde tu celular en cualquier momento.
       </p>
 

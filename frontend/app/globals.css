@@ -11,10 +11,11 @@
   --color-brand-black: #000000;
   --color-brand-white: #ffffff;
   --color-brand-brown: #5c4e41;
-  --color-brand-gold: #b19f82;
-  --color-brand-gray: #aaa59a;
+  --color-brand-gold: #b19f82;         /* Solo para decoración (bordes, fondos) */
+  --color-brand-gold-text: #6d5c3f;    /* Gold oscuro para texto — pasa WCAG AA */
+  --color-brand-gray: #6b6560;         /* Antes #aaa59a — ahora ratio 5.9:1 ✅ */
   --color-brand-cafe: #b19f82;
-  
+
   --font-outfit: var(--font-outfit);
   --font-poppins: var(--font-poppins);
 

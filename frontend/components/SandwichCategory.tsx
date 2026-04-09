@@ -21,7 +21,7 @@ export default function SandwichCategory({ product }: Props) {
             {product?.ingredients.bases?.map((base, idx) => (
               <div key={idx} className="flex justify-between items-center p-3 rounded-xl bg-gray-50 border border-gray-100">
                 <span className="font-medium text-brand-black text-sm">{base.name}</span>
-                <span className="font-semibold text-brand-gold">${product.basePrice?.toLocaleString("es-CL")}</span>
+                <span className="font-semibold text-brand-gold-text">${product.basePrice?.toLocaleString("es-CL")}</span>
               </div>
             ))}
          </div>
@@ -35,7 +35,7 @@ export default function SandwichCategory({ product }: Props) {
               <h3 className="font-outfit font-bold text-[15px] mb-2 text-brand-brown">Elige 2 Salsas</h3>
               <div className="flex flex-wrap gap-2">
                 {product?.ingredients.sauces?.map(s => (
-                   <span key={s.id} className="text-[13px] text-brand-gray bg-white border border-gray-200 px-3 py-1 rounded-full">
+                   <span key={s.id} className="text-[13px] text-brand-black/70 bg-white border border-gray-200 px-3 py-1 rounded-full">
                      {s.name}
                    </span>
                 ))}
@@ -47,7 +47,7 @@ export default function SandwichCategory({ product }: Props) {
               <h3 className="font-outfit font-bold text-[15px] text-brand-brown">Agregados</h3>
               <div className="flex flex-wrap gap-3">
                 {product?.ingredients.extras?.map(e => (
-                   <div key={e.id} className="text-[13px] text-brand-gray flex items-center gap-1.5">
+                   <div key={e.id} className="text-[13px] text-brand-black/70 flex items-center gap-1.5">
                      <span className="w-1.5 h-1.5 rounded-full bg-brand-gold" />
                      {e.name} <span className="font-medium text-brand-black ml-0.5">+${e.price}</span>
                    </div>

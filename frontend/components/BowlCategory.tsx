@@ -29,7 +29,7 @@ export default function BowlCategory({ product }: Props) {
         <h2 className="text-3xl font-outfit font-bold text-brand-black uppercase tracking-wider">
           {product?.name}
         </h2>
-        <p className="text-brand-gold font-medium mt-1 text-sm max-w-[350px] mx-auto leading-relaxed">
+        <p className="text-brand-gold-text font-medium mt-1 text-sm max-w-[350px] mx-auto leading-relaxed">
           {product?.description}
         </p>
         <div className="w-12 h-0.5 bg-brand-gold/30 mx-auto mt-4 rounded-full" />

@@ -23,7 +23,7 @@ export default function ProductCategory({ product }: Props) {
         <h2 className="text-3xl font-outfit font-bold text-brand-black uppercase tracking-wider">
           {product?.name}
         </h2>
-        <p className="text-brand-gold font-medium mt-1 text-sm max-w-[350px] mx-auto leading-relaxed">
+        <p className="text-brand-gold-text font-medium mt-1 text-sm max-w-[350px] mx-auto leading-relaxed">
           {product?.description}
         </p>
         <div className="w-12 h-0.5 bg-brand-gold/30 mx-auto mt-4 rounded-full" />
@@ -36,7 +36,7 @@ export default function ProductCategory({ product }: Props) {
           <div className="flex flex-col gap-4">
             {Object.entries(freshProteins).map(([price, names]) => (
               <div key={price} className="flex flex-col border-l-2 border-brand-gold/40 pl-3">
-                <span className="text-brand-gold font-semibold text-sm mb-1">${Number(price).toLocaleString("es-CL")}</span>
+                <span className="text-brand-gold-text font-semibold text-sm mb-1">${Number(price).toLocaleString("es-CL")}</span>
                 <p className="text-sm text-brand-gray leading-relaxed">
                   {Array.isArray(names) ? names.join(" • ") : ""}
                 </p>
