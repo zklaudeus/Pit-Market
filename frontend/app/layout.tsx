@@ -17,8 +17,19 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Pitmarket Menú",
-  description: "Menú Digital Interactivo",
+  title: "Pitmarket — Menú Digital",
+  description: "Conoce el menú de Pitmarket: platos frescos, bowls y sandwiches. Escanea el QR o visita nuestra carta digital.",
+  keywords: ["Pitmarket", "menú", "carta digital", "bowls", "sandwiches", "platos frescos", "comida"],
+  openGraph: {
+    title: "Pitmarket — Menú Digital",
+    description: "Carta digital de Pitmarket. Platos frescos, bowls y sandwiches.",
+    type: "website",
+    locale: "es_ES",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export const viewport: Viewport = {

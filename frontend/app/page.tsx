@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import Image from "next/image";
 import ProductCategory from "@/components/ProductCategory";
 import { fetchMenus } from "@/services/menuService";
@@ -17,10 +17,7 @@ export default async function StaticMenu() {
     <main className="min-h-screen bg-[#fcfcfc] pb-24 text-brand-black flex flex-col font-poppins selection:bg-brand-gold selection:text-white relative w-full overflow-x-hidden">
       
       {/* Sticky Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-5 flex items-center justify-between shadow-sm">
-        <Link href="/" className="text-brand-gray hover:text-brand-black transition-colors rounded-full p-1 -ml-2 bg-gray-50 border border-gray-100">
-          {/* Flecha para volver atras si fuese necesario */}
-        </Link>
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-5 flex items-center justify-center shadow-sm">
         <div className="flex flex-col items-center">
           <Image 
             src="/pit market-01.png" 
@@ -32,7 +29,6 @@ export default async function StaticMenu() {
           />
           <p className="text-[10px] uppercase tracking-widest text-brand-gray font-semibold mt-0.5">Menú del día</p>
         </div>
-        <div className="w-8" /> {/* Spacer */}
       </header>
 
       <div className="px-6 py-8 md:py-12 flex flex-col gap-10 md:gap-16 w-full max-w-5xl mx-auto">
