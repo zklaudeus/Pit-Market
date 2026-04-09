@@ -8,7 +8,7 @@ export default function QRCodeSection() {
   return (
     <section className="animate-slide-up bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgb(0,0,0,0.06)] border border-gray-50 flex flex-col items-center justify-center text-center mt-4">
       <h3 className="font-outfit font-bold text-2xl text-brand-black mb-2">
-        Escanea y Ordena
+        Escanea para ver el menú
       </h3>
       <p className="text-brand-gray text-sm mb-6 font-light max-w-[250px]">
         Accede a nuestro menú digital desde tu celular en cualquier momento.
