@@ -73,7 +73,7 @@ export default function BowlCategory({ product }: Props) {
         {/* Col 2: Vegetales y Toques (4 span) */}
         <div className="md:col-span-4 flex flex-col gap-6 z-10">
             <div>
-              <h3 className="font-outfit font-bold text-sm mb-2 text-brand-gold">III. Vegetales </h3> <span className="text-xs font-normal text-brand-gray tracking-wide ml-1">(elige 4)</span>
+              <h3 className="font-outfit font-bold text-sm mb-2 text-brand-gold">III. Vegetales </h3> <span className="text-xs font-normal text-white/70 tracking-wide ml-1">(elige 4)</span>
               <ul className="text-[13px] text-gray-300 font-light flex flex-col gap-1.5 list-disc pl-4 marker:text-brand-brown">
                 {product?.ingredients.veggies?.map(v => (
                   <li key={v.id}>{v.name}</li>
@@ -81,7 +81,7 @@ export default function BowlCategory({ product }: Props) {
               </ul>
             </div>
             <div>
-              <h3 className="font-outfit font-bold text-sm mb-2 text-brand-gold">IV. Toques </h3><span className="text-xs font-normal text-brand-gray tracking-wide ml-1">(elige 4)</span>
+              <h3 className="font-outfit font-bold text-sm mb-2 text-brand-gold">IV. Toques </h3><span className="text-xs font-normal text-white/70 tracking-wide ml-1">(elige 4)</span>
               <ul className="text-[13px] text-gray-300 font-light flex flex-col gap-1.5 list-disc pl-4 marker:text-brand-brown">
                 {product?.ingredients.touches?.map(t => (
                   <li key={t.id}>{t.name}</li>
@@ -95,8 +95,8 @@ export default function BowlCategory({ product }: Props) {
         {/* Col 3: Agregados y Salsas (3 span) */}
         <div className="md:col-span-3 flex flex-col gap-6 z-10">
              <div>
-                <h3 className="font-outfit font-bold text-sm mb-1 text-brand-gold">Salsas </h3><span className="text-xs font-normal text-brand-gray tracking-wide ml-1">(elige 4)</span>
-                <p className="text-[12px] text-gray-400 font-light leading-relaxed">
+                <h3 className="font-outfit font-bold text-sm mb-1 text-brand-gold">Salsas </h3><span className="text-xs font-normal text-white/70 tracking-wide ml-1">(elige 4)</span>
+                <p className="text-[12px] text-gray-300 font-light leading-relaxed">
                   Ajo | Soya | Ají | Albahaca | Cilantro | Perejil | Ciboulette | Mayo | Ketchup | Agridulce | Jengibre | Ají limón | Mostaza | Champiñón
                 </p>
              </div>

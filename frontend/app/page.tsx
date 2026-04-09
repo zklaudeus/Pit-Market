@@ -4,7 +4,7 @@ import ProductCategory from "@/components/ProductCategory";
 import { fetchMenus } from "@/services/menuService";
 import BowlCategory from "@/components/BowlCategory";
 import SandwichCategory from "@/components/SandwichCategory";
-import QRCodeSection from "@/components/QRCodeSection";
+import LazyQRCodeSection from "@/components/LazyQRCodeSection";
 
 export default async function StaticMenu() {
   const menuData = await fetchMenus();
@@ -50,10 +50,10 @@ export default async function StaticMenu() {
         {bowl && <BowlCategory product={bowl} />}
         {sandwich && <SandwichCategory product={sandwich} />}
 
-        {/* QR CODE SECTION */}
-        <QRCodeSection />
+        {/* QR CODE SECTION — carga diferida para no bloquear LCP */}
+        <LazyQRCodeSection />
         <div className="text-center py-6 pb-4">
-           <div className="w-8 h-8 mx-auto border border-gray-200 rounded-full flex items-center justify-center text-brand-black/40 mb-3">
+           <div className="w-8 h-8 mx-auto border border-gray-200 rounded-full flex items-center justify-center text-gray-600 mb-3">
              <span className="font-outfit text-[10px] font-bold">PM</span>
            </div>
         </div>
